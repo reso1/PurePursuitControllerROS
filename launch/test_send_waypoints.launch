@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+    <param name="waypoint_file_path" type="string" value="$(find pure_pursuit_controller)/wp/path.txt"/>
+
+    <node pkg="pure_pursuit_controller" type="test_send_ref_path.py" 
+        name="test_send_ref_path" respawn="false" output="screen" />
+
+</launch>

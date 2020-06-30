@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="2">
+    <name>pure_pursuit_controller</name>
+    <version>0.2.2</version>
+    <description>Pure Pursuit Controller </description>
+    <maintainer email="todd.j.tang@gmail.com">Todd Tang</maintainer>
+    <license>BSD-3-Clause</license>
+    <url type="website">https://github.com/srmainwaring/curio</url>
+    <author email="todd.j.tang@gmail.com">Todd Tang</author>
+    <buildtool_depend>catkin</buildtool_depend>
+    <build_depend>roslaunch</build_depend>
+    <build_depend>rospy</build_depend>
+    <build_export_depend>rospy</build_export_depend>
+    <exec_depend>rospy</exec_depend>
+    <depend>roscpp</depend>
+    <depend>geometry_msgs</depend>
+    <depend>visualization_msgs</depend>
+    <depend>nav_msgs</depend>
+    <depend>tf</depend>
+
+</package>

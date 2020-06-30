@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+    
+    <rosparam command="load" file="$(find pure_pursuit_controller)/config/pure_pursuit_controller.yaml" />
+
+    <node pkg="pure_pursuit_controller" type="PurePursuitControllerNode" 
+        name="pure_pursuit_controller" respawn="false" output="screen" />
+
+    <node pkg="pure_pursuit_controller" type="show_trajectory.py"
+        name="show_trajectory" respawn="false" output="screen" />
+
+    <node pkg="rviz" type="rviz" name="rviz" respawn="false" output="screen" 
+        args="-d $(find pure_pursuit_controller)/rviz/default.rviz"/>
+</launch>

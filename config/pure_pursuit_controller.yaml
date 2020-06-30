@@ -1,0 +1,30 @@
+pure_pursuit_controller:
+  # Reference Path Topic Name
+  ref_path_topic_name: "/reference_path"
+  # Vehicle Odometry Topic Name
+  odom_topic_name: "/odometry/filtered_map"
+  # Vehicel Command-Velocity Topic Name
+  cmd_vel_topic_name: "/ackermann_drive_controller/cmd_vel"
+  # Next Waypoint Topic Name for Rviz
+  interp_waypoint_topic_name: "/interpolated_waypoint_pose"
+  # Vehicle Pose Frame ID
+  pose_frame_id: "base_link"
+  # Max Queue Size for publishers and subscribers 
+  queue_depth: 100
+  # The Pure Pursuit Controller Frequency
+  control_frequency: 20.0
+  # Vehicle Target Linear Velocity
+  target_velocity: 0.2 # [m/s]
+  # Look-ahead-Distance = look_ahead_ratio*v + look_ahead_constant 
+  look_ahead_ratio: 0.1
+  look_ahead_constant: 1.0
+  # Delta Pose Error Threshold
+  epsilon: 1e-6
+
+trajectory_drawer:
+  # Trajectory Topic Name for Rviz
+  traj_topic_name: "/planned_trajectory"
+  # Vehicle Odometry Topic Name
+  odom_topic_name: "/odometry/filtered_map"
+  # Trajectoy Update Frequency
+  frequency: 1.0
